@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop Up</title>
+    <link rel="stylesheet" href="Pop up.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <a class="button" onclick="togglePop()">Join Our Club</a>
+    <div class="hidden" id="PopUp">
+        <img src="/Images/Pop Up.webp" alt="Banner Image" />
+        <div class="all">
+        <h1>Don't miss out</h1>
+        <h4>Join our club to get exclusive sale notifications, club member discounts, and more cool stuff.</h4>
+        <div class="box">
+            <input type="email" placeholder="Email">
+        </div>
+            <div class="box">
+                <button type="submit">I WANT IN</button>
+            </div>
+        </div>
+            <a class="close" onclick="togglePop()">
+                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+            </a>
+    </div>
+    <script src="Pop up.js"></script>
+</body>
+
+</html>
